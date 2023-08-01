@@ -1,0 +1,41 @@
+.menu{
+    max-width: var(--width);
+    margin: 2rem 0 2rem auto;
+    color: var(--color-white);
+    background-color: var(--background-green)
+}
+
+.icones-header{
+    display: flex;
+}
+
+.links-header{
+    gap: 0.5rem;
+    display: flex;
+}
+
+.links-header a{
+    padding: 0.5rem;
+    margin: 0.2rem;
+    display: flex;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.links-header a:hover{
+    color: var(--color-brown);
+    background-color: var(--color-white);
+    border-radius: 10px;
+    transition: .7s ease-in-out;
+}
+
+.rodape{
+    display: flex;
+    width: 1200px;
+    max-width: var(--width);
+    padding: 21px 879px 20px 20px;
+    margin: 2rem 0 2rem auto;
+    align-items: flex-start;
+    color: var(--color-white);
+    background-color: var(--background-green);
+}
