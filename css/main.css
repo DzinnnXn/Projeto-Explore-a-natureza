@@ -19,12 +19,12 @@
 
 .scroll img{
     width: 900px;
-    height: 600px;
+    height: 700px;
     flex-shrink: 0;
 }
 
 .scroll{
-    height: 50vh;
+    height: 70vh;
     width: 300px;
     overflow-y: scroll;
     overflow-x: hidden;
