@@ -53,3 +53,10 @@
     background-color: var(--background-green);
     border-radius: 10px;
 }
+
+@media screen and (max-width: 912px){
+    .natureza-section{
+        flex-direction: column;
+        align-items: center;
+    }
+}
