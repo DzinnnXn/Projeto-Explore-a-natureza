@@ -1,66 +1,67 @@
-.faq-section{
+.faq-section {
     min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.titulo{
+.titulo {
+    font-family: var(--font-display);
     font-size: 3rem;
     margin: 2rem 0rem;
 }
 
-.faq{
+.faq {
     max-width: 700px;
     margin-top: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid #fff2e7;
 }
 
-.pergunta{
+.questao {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.pergunta h3{
+.questao h3 {
     font-size: 1rem;
     color: var(--color-brown);
 }
 
-.resposta{
+.resposta {
     max-height: 0;
     overflow: hidden;
     transition: max-height 500ms ease;
 }
 
-.resposta p{
+.resposta p {
     padding-top: 1rem;
     line-height: 1.6;
     font-size: 0.9rem;
 }
 
-.faq.active .resposta{
+.faq.active .resposta {
     max-height: 300px;
     animation: fade 1s ease-in-out;
 }
 
-.faq.active svg{
+.faq.active svg {
     transform: rotate(180deg);
 }
 
-svg{
+svg {
     transition: transform 500ms ease-in;
 }
 
-@keyframes fade{
-    from{
+@keyframes fade {
+    from {
         opacity: 0;
         transform: translateY(-10px);
     }
 }
 
-.divSearch{
+.divSearch {
     width: 100%;
     max-width: fit-content;
     display: flex;
@@ -71,8 +72,8 @@ svg{
     border-radius: 40px;
 }
 
-.caixap{
-    font-family: 'Sarala', sans-serif;
+.caixap {
+    font-family: "Sarala", sans-serif;
     padding: 5px;
     outline: none;
     border: none;
@@ -82,10 +83,22 @@ svg{
     font-size: 16px;
     line-height: 40px;
     width: 0;
-    transition: .5s;
+    transition: 0.5s;
 }
 
-::-webkit-input-placeholder{
+::-webkit-input-placeholder {
     color: #ffffffb4;
-    font-family: 'Sarala', sans-serif;
+    font-family: "Sarala", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .titulo{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .faq-section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
