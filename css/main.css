@@ -1,6 +1,8 @@
 .natureza-section {
     display: flex;
     min-height: 80vh;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .img-scroll img {
