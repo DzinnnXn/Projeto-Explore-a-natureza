@@ -1,7 +1,11 @@
-const faqs = document.querySelectorAll(".faq");
+export function Faq() {
+    const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach(faq => {
     faq.addEventListener("click", () => {
         faq.classList.toggle("active");
     });
 });
+
+
+}
